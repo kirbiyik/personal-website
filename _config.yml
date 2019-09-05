@@ -1,0 +1,65 @@
+title: Omer Kirbiyik
+url: omerkirbiyik.com
+#author: GitHub User
+#email: your-email@domain.com
+description: > # this means to ignore newlines until "show_excerpts:"
+  The hidden law of a probable outcome, the numbers lead a dance. -Sting
+
+show_excerpts: false # set to true to show excerpts on the homepage
+about_me: >
+  I am a **Master** Student in Informatics at the **Technical University of Munich**. 
+  I earned **Bachelor's** in Computer Science at **Boğaziçi University**. 
+  I work on **Computer Vision** problems by using Deep Learning approaches, generally. 
+  Below you can find my publications, projects for learning and blog posts. 
+  Feel free to contact me.
+
+# Minima date format
+# refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    twitter: omerkirbiyik
+    github:  kirbiyik
+    #rss: rss
+    # dribbble: jekyll
+    # facebook: jekyll
+    # flickr:   jekyll
+    # instagram: jekyll
+    linkedin: kirbiyik
+    # pinterest: jekyll
+    # youtube: yt
+    youtube_channel: UC4LnJkfmguK1aej63oIY-nA
+    scholar: VcN43_oAAAAJ
+    # youtube_channel_name: yt
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+    kaggle: kirbiyik
+
+disqus:
+  shortname: omerkirbiyik
+
+google_analytics: UA-109739408-1
+
+
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+#header_pages:
+# - about.md
+
+# Build settings
+theme: minima
+
+
+plugins:
+ - jekyll-feed
+ - jekyll-seo-tag

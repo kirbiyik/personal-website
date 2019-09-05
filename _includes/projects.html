@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app" class="container">
+        <a href="https://github.com/kirbiyik/generate-any-text">
+            <card
+                data-image="https://images.unsplash.com/photo-1528459199957-0ff28496a7f6?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                <h2 slot="header">Generate Any Text</h2>
+                <p slot="content">Generate any kind of text with Character Embedding and RNN in pure Numpy
+                </p>
+            </card>
+        </a>
+        <a href="https://www.youtube.com/watch?v=VW9YBlV4ZWo">
+            <card
+                data-image="https://images.unsplash.com/photo-1546273464-39e6bf128ac3?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                <h2 slot="header">Guess Who Drew This, Human or AI?</h2>
+                <p slot="content">This work is awarded as the best senior project within Department of Computer
+                    Engineering,
+                    Bogazici University.
+                </p>
+            </card>
+        </a>
+        <a href="https://omerkirbiyik.com/pac-man">
+            <card
+                data-image="https://images.unsplash.com/photo-1558271697-dd9f331ca8b3?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                <h2 slot="header">Run Pac-Man Run</h2>
+                <p slot="content">Move Pac-Man with your voice commands through neural network running on your browser.
+                </p>
+            </card>
+        </a>
+        <a href="http://omerkirbiyik.com/caption-it" target="_blank">
+            <card
+                data-image="https://images.unsplash.com/photo-1543941869-11da6518d88f?dpr=2&auto=compress,format&fit=crop&w=1199&h=798&q=80&cs=tinysrgb&crop=">
+                <h2 slot="header">Caption It</h2>
+                <p slot="content">Let your computer say what happens in the image.</p>
+            </card>
+        </a>
+        <a href="http://omerkirbiyik.com/neural-style" target="_blank">
+            <card
+                data-image="https://images.unsplash.com/photo-1514905552197-0610a4d8fd73?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                <h2 slot="header">Neural Style</h2>
+                <p slot="content">Let van Gogh touch your image with Deep Learning.</p>
+            </card>
+        </a>
+        <a href="http://cultidate.ml" target="_blank">
+            <card
+                data-image="https://images.unsplash.com/photo-1534939244238-b03f73a4aa67?dpr=2&auto=compress,format&fit=crop&w=1199&h=799&q=80&cs=tinysrgb&crop=">
+                <h2 slot="header">Cultidate</h2>
+                <p slot="content">Social platform for cultural activities</p>
+            </card>
+        </a>
+    </div>
+
+    <script type="text/javascript">
+        'use strict';
+        Vue.config.devtools = true;
+        Vue.component('card', {
+            template: '\n    <div class="card-wrap"\n      @mousemove="handleMouseMove"\n      @mouseenter="handleMouseEnter"\n      @mouseleave="handleMouseLeave"\n      ref="card">\n      <div class="card"\n        :style="cardStyle">\n        <div class="card-bg" :style="[cardBgTransform, cardBgImage]"></div>\n        <div class="card-info">\n          <slot name="header"></slot>\n          <slot name="content"></slot>\n        </div>\n      </div>\n    </div>',
+            mounted: function mounted() {
+                this.width = this.$refs.card.offsetWidth;
+                this.height = this.$refs.card.offsetHeight;
+            },
+            props: ['dataImage'],
+            data: function data() {
+                return {
+                    width: 0,
+                    height: 0,
+                    mouseX: 0,
+                    mouseY: 0,
+                    mouseLeaveDelay: null
+                };
+            },
+            computed: {
+                mousePX: function mousePX() {
+                    return this.mouseX / this.width;
+                },
+                mousePY: function mousePY() {
+                    return this.mouseY / this.height;
+                },
+                cardStyle: function cardStyle() {
+                    var rX = this.mousePX * 30;
+                    var rY = this.mousePY * -30;
+                    return {
+                        transform: 'rotateY(' + rX + 'deg) rotateX(' + rY + 'deg)'
+                    };
+                },
+                cardBgTransform: function cardBgTransform() {
+                    var tX = this.mousePX * -40;
+                    var tY = this.mousePY * -40;
+                    return {
+                        transform: 'translateX(' + tX + 'px) translateY(' + tY + '	px)'
+                    };
+                },
+                cardBgImage: function cardBgImage() {
+                    return {
+                        backgroundImage: 'url(' + this.dataImage + ')'
+                    };
+                }
+            },
+            methods: {
+                handleMouseMove: function handleMouseMove(e) {
+                    this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
+                    this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
+                },
+                handleMouseEnter: function handleMouseEnter() {
+                    clearTimeout(this.mouseLeaveDelay);
+                },
+                handleMouseLeave: function handleMouseLeave() {
+                    var _this = this;
+                    this.mouseLeaveDelay = setTimeout(function () {
+                        _this.mouseX = 0;
+                        _this.mouseY = 0;
+                    }, 1000);
+                }
+            }
+        });
+        var app = new Vue({
+            el: '#app'
+        });
+    </script>
+</body>
+
+</html>

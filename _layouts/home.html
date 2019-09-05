@@ -1,0 +1,87 @@
+---
+layout: default
+---
+
+<div class="home">
+  <div class="center">
+    <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+      <img src="{{ site.baseurl }}/assets/images/profile.jpg" class="user-image center" alt="My Profile Photo">
+    </a>
+
+  </div>
+  <h1 class="center">{{ site.title }}</h1>
+  <p class="center">{{ site.about_me | markdownify}}</p>
+  <div class="social-links">
+    {%- include social.html -%}
+  </div>
+  {%- if page.title -%}
+  <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+
+  <div class="tabs center" style="margin: 20px">
+    <input type="radio" name="tabs" id="tabone" checked="checked">
+    <label for="tabone">News</label>
+    <div class="tab">
+      {%- if site.pages.size > 0 -%}
+      {%- for page in site.pages -%}
+      {%- if page.title == "News" -%}
+      {{ page.content | markdownify }}
+      {%- endif -%}
+      {%- endfor -%}
+      {%- endif -%}
+    </div>
+
+    <input type="radio" name="tabs" id="tabtwo">
+    <label for="tabtwo">Publications</label>
+    <div class="tab">
+      <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Publications" }}</h2> -->
+      {%- if site.pages.size > 0 -%}
+      {%- for page in site.pages -%}
+      {%- if page.title == "Publications" -%}
+      {{ page.content | markdownify }}
+      {%- endif -%}
+      {%- endfor -%}
+      {%- endif -%}
+    </div>
+
+    <input type="radio" name="tabs" id="tabthree">
+    <label for="tabthree">Projects</label>
+    <div class="tab">
+      {%- include projects.html -%}
+    </div>
+
+    <input type="radio" name="tabs" id="tabfour">
+    <label for="tabfour">Blog</label>
+    <div class="tab">
+      {%- if site.posts.size > 0 -%}
+      <ul class="post-list">
+        {%- for post in site.posts -%}
+        <li>
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+          <h3>
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          {%- if site.show_excerpts -%}
+          {{ post.excerpt }}
+          {%- endif -%}
+        </li>
+        {%- endfor -%}
+      </ul>
+      {%- endif -%}
+
+    </div>
+  </div>
+
+  <p class="feed-subscribe center" style="margin: 20px">
+    <a href="{{ 'feed.xml' | relative_url }}">
+      <svg class="svg-icon orange">
+        <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
+      </svg><span>Subscribe</span>
+    </a>
+  </p>

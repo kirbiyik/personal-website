@@ -1,5 +1,5 @@
 title: Omer Kirbiyik
-url: omerkirbiyik.com
+url: https://omerkirbiyik.com
 #author: GitHub User
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "show_excerpts:"
@@ -46,7 +46,7 @@ minima:
     kaggle: kirbiyik
 
 disqus:
-  shortname: omerkirbiyik
+  shortname: omerkirbiyik-com
 
 google_analytics: UA-109739408-1
 

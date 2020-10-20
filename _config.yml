@@ -1,4 +1,5 @@
 title: Omer Kirbiyik
+title_tr: Ömer Kırbıyık
 url: https://omerkirbiyik.com
 #author: GitHub User
 #email: your-email@domain.com
@@ -7,10 +8,9 @@ description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
 about_me: >
-  I am a **Master** Student in Informatics at the **Technical University of Munich**. 
-  I earned **Bachelor's** in Computer Science at **Boğaziçi University**. 
-  I work on **Computer Vision** problems by using Deep Learning approaches, generally. 
-  Below you can find my publications, projects for learning and blog posts. 
+
+  I work on several Computer Vision problems by using Deep Learning approaches, generally. 
+  Below you can find my publications, projects for learning and blog posts. I occasionaly work as a freelancer.
   Feel free to contact me.
 
 # Minima date format

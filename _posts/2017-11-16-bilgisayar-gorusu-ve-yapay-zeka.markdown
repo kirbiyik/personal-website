@@ -11,6 +11,9 @@ permalink: "/bilgisayar-gorusu-ve-yapay-zeka.html"
 
 ![image](/assets/images/obama.png)
 
+*Bu yazı Andrej Karpathy'nin izni ile teknik kısımları sadeleştirilerek Türkçeye çevrilmiştir.*
+
+
 Eğlenceli bir resim.
 
 
@@ -47,7 +50,6 @@ Problemin karmaşıklığını ve geniş ölçeğini göz önünde bulundurduğu
 Her neyse, o noktaya çok çok uzağız ve bu benim canımı sıkıyor: Önümüzde ne var? Belki de bunları bırakıp girişimcilikle uğraşmalıyım. Aklımda gerçekten hoş bir yerel-sosyal iPhone uygulaması fikri var...
 
 
-*Bu yazı Andrej Karpathy'nin izni ile teknik kısımları sadeleştirilerek Türkçeye çevrilmiştir.
 
 
 Çeviri: Ömer Kırbıyık

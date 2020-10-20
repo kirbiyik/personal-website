@@ -9,7 +9,28 @@ layout: default
     </a>
 
   </div>
-  <h1 class="center">{{ site.title }}</h1>
+
+  <h1 class="center"> {{ site.title_tr }}</h1>
+  <h4 class="center">({{ site.title }})</h4>
+
+  <h5 class="center"> Pronounciation </h5>
+  <audio style="margin: 0 auto; display: block;" controls>
+    <source src="/assets/name.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+
+  <div class="center">
+    <p style="float: left;"><img src="assets/images/tum-logo.png" height="80px" width="auto" ></p>
+    <p style="margin: auto"><b>(2019 - ...) </b> Computer Science (Informatik), MSc, Technical University of Munich</p>
+  </div>
+  <div class="center" style="clear: left;">
+    <p style="float: left;"><img src="assets/images/boun.png" height="80px" width="auto" ></p>
+    <p style="margin: auto"><b>(2015 - 2019)</b> Computer Science, BSc, Boğaziçi University</p>
+  </div>
+
+
+
   <p class="center">{{ site.about_me | markdownify}}</p>
   <div class="social-links">
     {%- include social.html -%}

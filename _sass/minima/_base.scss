@@ -397,14 +397,20 @@ table {
   display: none;
   padding: 1rem;
   background: #fff;
+  
 }
  
 .tabs input[type="radio"] {
   display: none;
 }
  
-.tabs input[type="radio"]:checked + label {
+.tabs input[type="radio"] + label{
   background: rgb(224, 225, 225);
+}
+
+.tabs input[type="radio"]:checked + label {
+  background: rgb(39, 87, 190);
+  color: #fdfdfd;
 }
  
 .tabs input[type="radio"]:checked + label + .tab {

@@ -4,7 +4,7 @@ title: News
 permalink: /news/
 ---
 *September 2020*
-- Our collaboration with HBO is nominated for the **Emmy Awards** for Outstanding Main Title Design! [Watch the Story, ](https://vimeo.com/442606868){:target="_blank"} [Emmys Website Link,](https://www.emmys.com/awards/nominees-winners/2020/outstanding-main-title-design){:target="_blank"} [Press Coverage](https://www.insider.com/westworld-title-sequence-designer-interview-patrick-clair-season-3-2020-8){:target="_blank"}
+- Our collaboration with HBO for **Westworld TV Series** is nominated for the **Emmy Awards** for the Outstanding Main Title Design! [Watch the Story, ](https://vimeo.com/442606868){:target="_blank"} [Emmys Website Link,](https://www.emmys.com/awards/nominees-winners/2020/outstanding-main-title-design){:target="_blank"} [Press Coverage](https://www.insider.com/westworld-title-sequence-designer-interview-patrick-clair-season-3-2020-8){:target="_blank"}
 
 
 *May 2020* 

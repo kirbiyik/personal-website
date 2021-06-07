@@ -59,6 +59,8 @@ google_analytics: UA-109739408-1
 # Build settings
 theme: minima
 
+include: 
+ - .well-known # add this folder for brave rewards
 
 plugins:
  - jekyll-feed

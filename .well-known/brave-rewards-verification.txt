@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: omerkirbiyik.com
+Token: d9da5e57c185787f2d4217c8dd34d6c04cf49818cf574fea95f11494f6b94128

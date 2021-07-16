@@ -8,8 +8,6 @@ permalink: "/point-transformer.html"
 
 ---
 
-# Review for Point Transformer
-
 Paper | Implementations
 :-------------------------:|:-------------------------:
 [Arxiv Link](https://arxiv.org/abs/2012.09164v1)|  [Papers with Code Link](https://paperswithcode.com/paper/point-transformer-1)

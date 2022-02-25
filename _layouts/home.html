@@ -3,35 +3,16 @@ layout: default
 ---
 
 <div class="home">
-  <div class="center">
-    <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
-      <img src="{{ site.baseurl }}/assets/images/profile.jpg" class="user-image center" alt="My Profile Photo">
-    </a>
-
-  </div>
-
-  <h1 class="center"> {{ site.title_tr }}</h1>
-  <h4 class="center">({{ site.title }})</h4>
-
-  <h5 class="center"> People often tell me pronounciation of my name is hard. Help arrived!  </h5>
-  <audio style="margin: 0 auto; display: block;" controls>
-    <source src="/assets/name.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
 
 
-  <div class="center">
-    <p style="float: left;"><img src="assets/images/tum-logo.png" style="height:auto; max-width:100px; max-height:100px"></p>
-    <p style="margin: auto"><b>(2019 - ...) </b> Computer Science (Informatik), MSc, Technical University of Munich</p>
-  </div>
-  <div class="center" style="clear: left;">
-    <p style="float: left;"><img src="assets/images/boun.png" style="height:auto; max-width:100px;"></p>
-    <p style="margin: auto"><b>(2015 - 2019)</b> Computer Science, BSc, Boğaziçi University</p>
-  </div>
+  {%- if site.pages.size > 0 -%}
+  {%- for page in site.pages -%}
+  {%- if page.title == "About" -%}
+  {{ page.content | markdownify }}
+  {%- endif -%}
+  {%- endfor -%}
+  {%- endif -%}
 
-
-
-  <p class="center">{{ site.about_me | markdownify}}</p>
   <div class="social-links">
     {%- include social.html -%}
   </div>
@@ -43,33 +24,8 @@ layout: default
 
 
   <div class="tabs center" style="margin: 20px">
-    <input type="radio" name="tabs" id="tabone">
-    <label for="tabone">News</label>
-    <div class="tab">
-      {%- if site.pages.size > 0 -%}
-      {%- for page in site.pages -%}
-      {%- if page.title == "News" -%}
-      {{ page.content | markdownify }}
-      {%- endif -%}
-      {%- endfor -%}
-      {%- endif -%}
-    </div>
-
     <input type="radio" name="tabs" id="tabtwo">
-    <label for="tabtwo">Publications</label>
-    <div class="tab">
-      <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Publications" }}</h2> -->
-      {%- if site.pages.size > 0 -%}
-      {%- for page in site.pages -%}
-      {%- if page.title == "Publications" -%}
-      {{ page.content | markdownify }}
-      {%- endif -%}
-      {%- endfor -%}
-      {%- endif -%}
-    </div>
-
-    <input type="radio" name="tabs" id="tabthree">
-    <label for="tabthree">Projects</label>
+    <label for="tabtwo">Projects</label>
     <div class="tab">
       {%- include projects.html -%}
     </div>
@@ -97,6 +53,32 @@ layout: default
       {%- endif -%}
 
     </div>
+
+    <input type="radio" name="tabs" id="tabthree">
+    <label for="tabthree">Publications</label>
+    <div class="tab">
+      <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Publications" }}</h2> -->
+      {%- if site.pages.size > 0 -%}
+      {%- for page in site.pages -%}
+      {%- if page.title == "Publications" -%}
+      {{ page.content | markdownify }}
+      {%- endif -%}
+      {%- endfor -%}
+      {%- endif -%}
+    </div>
+
+    <input type="radio" name="tabs" id="tabone" checked=true>
+    <label for="tabone">News</label>
+    <div class="tab">
+      {%- if site.pages.size > 0 -%}
+      {%- for page in site.pages -%}
+      {%- if page.title == "News" -%}
+      {{ page.content | markdownify }}
+      {%- endif -%}
+      {%- endfor -%}
+      {%- endif -%}
+    </div>
+
   </div>
 
   <p class="feed-subscribe center" style="margin: 20px">
@@ -106,3 +88,5 @@ layout: default
       </svg><span>Subscribe</span>
     </a>
   </p>
+
+</div>

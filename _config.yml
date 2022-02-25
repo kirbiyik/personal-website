@@ -7,11 +7,6 @@ description: > # this means to ignore newlines until "show_excerpts:"
   The hidden law of a probable outcome, the numbers lead a dance. -Sting
 
 show_excerpts: false # set to true to show excerpts on the homepage
-about_me: >
-
-  I work on several Computer Vision problems by using Deep Learning approaches, generally. 
-  Below you can find my publications, projects for learning and blog posts. I occasionaly work as a freelancer.
-  Feel free to contact me.
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this

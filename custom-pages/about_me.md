@@ -38,7 +38,7 @@ permalink: /about/
 I've experience and interest on
 * General Software Engineering
 * Machine Learning, NLP, Computer Vision, MLOps
-* iOS and Web Development
+* (a bit) iOS and Web Development
 
 Below you can find my publications, projects for learning and blog posts. I also occasionaly work as a freelancer. Feel free to contact me through email or my social media.
 

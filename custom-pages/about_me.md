@@ -13,6 +13,7 @@ permalink: /about/
 
 <h1 class="center"> {{ site.title_tr }}</h1>
 <h4 class="center">({{ site.title }})</h4>
+<h4 class="center"> <p> Software Engineer at  <b>Microsoft</b>  💻 and MSc (Computer Science) student at <b>TUM</b> 📚. </p></h4>
 
 <h5 class="center"> People often tell me pronounciation of my name is hard. Help arrived! </h5>
 <audio style="margin: 0 auto; display: block;" controls>
@@ -32,16 +33,10 @@ permalink: /about/
 </div>
 
 
-💻  🤖  I am a **Software Engineer** at **(To Be Announced :) )** and Master of Science student at **TUM**. 
-
-
 I've experience and interest on
 * General Software Engineering
 * Machine Learning, NLP, Computer Vision, MLOps
 * (a bit) iOS and Web Development
 
-Below you can find my publications, projects for learning and blog posts. I also occasionaly work as a freelancer. Feel free to contact me through email or my social media.
-
-Contact me through email for CV and references.
-
+Below you can find my publications, projects for learning and blog posts. Feel free to contact me through email or my social media for any inquiries.
 

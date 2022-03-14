@@ -5,10 +5,10 @@ permalink: /news/
 ---
 
 *March 2022* 
-- I'm now a Software Engineer (Working Student) at **To be Announced** in the AI team.
+- I'm now a Software Engineer (Working Student) at **Microsoft**, Munich in the AI team.
 
 *March 2021* 
-- I've started working at Siemens AG as a Software Engineer (Working Student) in MLOps.
+- I've started working at **Siemens AG** as a Software Engineer (Working Student) in MLOps.
   
 
 *September 2020*

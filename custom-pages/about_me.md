@@ -13,7 +13,7 @@ permalink: /about/
 
 <h1 class="center"> {{ site.title_tr }}</h1>
 <h4 class="center">({{ site.title }})</h4>
-<h4 class="center"> <p> Software Engineer at  <b>Microsoft</b>  💻 and MSc (Computer Science) student at <b>TUM</b> 📚. </p></h4>
+<h4 class="center"> <p> Software Engineer (Working Student) at  <b>Microsoft</b>  💻 and MSc (Computer Science) student at <b>TUM</b> 📚. </p></h4>
 
 <h5 class="center"> People often tell me pronounciation of my name is hard. Help arrived! </h5>
 <audio style="margin: 0 auto; display: block;" controls>

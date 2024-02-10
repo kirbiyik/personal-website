@@ -4,7 +4,7 @@ url: https://omerkirbiyik.com
 #author: GitHub User
 #email: your-email@domain.com
 description: > # this means to ignore newlines until "show_excerpts:"
-  The hidden law of a probable outcome, the numbers lead a dance. -Sting
+  A fancy quote here would be useful
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
@@ -15,8 +15,8 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: omerkirbiyik
-    github:  kirbiyik
+    # twitter: omerkirbiyik
+    github: kirbiyik
     #rss: rss
     # dribbble: jekyll
     # facebook: jekyll
@@ -25,9 +25,8 @@ minima:
     linkedin: kirbiyik
     # pinterest: jekyll
     # youtube: yt
-    youtube_channel: UC4LnJkfmguK1aej63oIY-nA
-    scholar: VcN43_oAAAAJ
-    # youtube_channel_name: yt
+    # youtube_channel: UC4LnJkfmguK1aej63oIY-nA
+    # scholar: VcN43_oAAAAJ
     # telegram: jekyll
     # googleplus: +jekyll
     # microdotblog: jekyll
@@ -38,13 +37,12 @@ minima:
     #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
-    kaggle: kirbiyik
+    # kaggle: kirbiyik
 
 disqus:
   shortname: omerkirbiyik-com
 
 google_analytics: UA-109739408-1
-
 
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
@@ -54,9 +52,9 @@ google_analytics: UA-109739408-1
 # Build settings
 theme: minima
 
-include: 
- - .well-known # add this folder for brave rewards
+include:
+  - .well-known # add this folder for brave rewards
 
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-seo-tag

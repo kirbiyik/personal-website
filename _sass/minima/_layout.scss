@@ -311,5 +311,36 @@
 
 .center {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: center;
+  gap: 5px;
+}
+
+.expandable {
+  overflow: hidden;
+  max-height: 50px; /* Set a fixed height */
+  transition: max-height 0.3s ease; /* Add smooth transition */
+  text-align: left; /* Ensure content remains aligned to the left */
+
+}
+
+.expandable[open] {
+  
+  max-height: 1000px; /* A large enough value to accommodate the content */
+}
+
+/* Ensure smooth transition on expanding and collapsing */
+.expandable summary::-webkit-details-marker {
+  transition: transform 0.3s ease;
+}
+.expandable[open] summary::-webkit-details-marker {
+  transform: rotate(90deg); /* Rotate the marker to indicate expanded state */
 }

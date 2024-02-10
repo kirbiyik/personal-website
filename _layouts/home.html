@@ -13,9 +13,6 @@ layout: default
   {%- endfor -%}
   {%- endif -%}
 
-  <div class="social-links">
-    {%- include social.html -%}
-  </div>
   {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
@@ -23,70 +20,13 @@ layout: default
   {{ content }}
 
 
-  <div class="tabs center" style="margin: 20px">
-    <input type="radio" name="tabs" id="tabtwo">
-    <label for="tabtwo">Projects</label>
-    <div class="tab">
-      {%- include projects.html -%}
+  <h4>Q&A</h4>
+  <details class="expandable center">
+    <summary>Do you have a video of yourself singing? </summary>
+    <div class="content">
+    <h4>Yes, I do. Thanks for asking 🙃 </h4>
+    <iframe  width="600" height="340" src="https://www.youtube.com/embed/KrNZ6K767o0" title="Ömer Kırbıyık - Dance Me to the End of Love (Gasteig, Munich)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </div>
-
-    <input type="radio" name="tabs" id="tabfour">
-    <label for="tabfour">Blog</label>
-    <div class="tab">
-      {%- if site.posts.size > 0 -%}
-      <ul class="post-list">
-        {%- for post in site.posts -%}
-        <li>
-          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
-          </h3>
-          {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-          {%- endif -%}
-        </li>
-        {%- endfor -%}
-      </ul>
-      {%- endif -%}
-
-    </div>
-
-    <input type="radio" name="tabs" id="tabthree">
-    <label for="tabthree">Publications</label>
-    <div class="tab">
-      <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Publications" }}</h2> -->
-      {%- if site.pages.size > 0 -%}
-      {%- for page in site.pages -%}
-      {%- if page.title == "Publications" -%}
-      {{ page.content | markdownify }}
-      {%- endif -%}
-      {%- endfor -%}
-      {%- endif -%}
-    </div>
-
-    <input type="radio" name="tabs" id="tabone" checked=true>
-    <label for="tabone">News</label>
-    <div class="tab">
-      {%- if site.pages.size > 0 -%}
-      {%- for page in site.pages -%}
-      {%- if page.title == "News" -%}
-      {{ page.content | markdownify }}
-      {%- endif -%}
-      {%- endfor -%}
-      {%- endif -%}
-    </div>
-
-  </div>
-
-  <p class="feed-subscribe center" style="margin: 20px">
-    <a href="{{ 'feed.xml' | relative_url }}">
-      <svg class="svg-icon orange">
-        <use xlink:href="{{ 'assets/minima-social-icons.svg#rss' | relative_url }}"></use>
-      </svg><span>Subscribe</span>
-    </a>
-  </p>
+  </details>
 
 </div>

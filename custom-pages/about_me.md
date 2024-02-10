@@ -17,7 +17,7 @@ permalink: /about/
 
 <h5 class="center"> People often tell me pronounciation of my name is hard. Help arrived! </h5>
 <audio style="margin: 0 auto; display: block;" controls>
-    <source src="/assets/name.mp3" type="audio/mpeg">
+    <source src="{{ site.baseurl }}/assets/name.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
 </audio>
 

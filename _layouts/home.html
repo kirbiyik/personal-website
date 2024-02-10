@@ -3,30 +3,27 @@ layout: default
 ---
 
 <div class="home">
-
-
-  {%- if site.pages.size > 0 -%}
-  {%- for page in site.pages -%}
-  {%- if page.title == "About" -%}
-  {{ page.content | markdownify }}
-  {%- endif -%}
-  {%- endfor -%}
-  {%- endif -%}
-
-  {%- if page.title -%}
+  {%- if site.pages.size > 0 -%} {%- for page in site.pages -%} {%- if
+  page.title == "About" -%} {{ page.content | markdownify }} {%- endif -%} {%-
+  endfor -%} {%- endif -%} {%- if page.title -%}
   <h1 class="page-heading">{{ page.title }}</h1>
-  {%- endif -%}
-
-  {{ content }}
-
+  {%- endif -%} {{ content }}
 
   <h4>Q&A</h4>
   <details class="expandable center">
-    <summary>Do you have a video of yourself singing? </summary>
+    <summary>Do you have a video of yourself singing?</summary>
     <div class="content">
-    <h4>Yes, I do. Thanks for asking 🙃 </h4>
-    <iframe  width="600" height="340" src="https://www.youtube.com/embed/KrNZ6K767o0" title="Ömer Kırbıyık - Dance Me to the End of Love (Gasteig, Munich)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <h4>Yes, I do. Thanks for asking 🙃</h4>
+      <iframe
+        class="iframe-container"
+        width="600"
+        height="340"
+        src="https://www.youtube.com/embed/KrNZ6K767o0"
+        title="Ömer Kırbıyık - Dance Me to the End of Love (Gasteig, Munich)"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
   </details>
-
 </div>

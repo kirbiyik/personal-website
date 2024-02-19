@@ -17,13 +17,14 @@ comments: false
     <img src="{{ site.baseurl }}/assets/images/boun.png" style="height:auto; max-width:100px;">
     <b>(2015 - 2019)</b> Computer Science, BSc, Boğaziçi University
 </div>
+<br>
 
 ### Random Updates
 
-_March 2022_
-
+_March 2023_
 - I'm now a Software Engineer at **Palantir** in London.
 
+_March 2022_
 - I'm now a Software Engineer (Working Student) at **Microsoft**, Munich in the AI team.
 
 _March 2021_
